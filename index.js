@@ -28,7 +28,7 @@ function nextVideoThumb() {
     $('.cars').addClass(nextClass);
     $('.car[index=' + nextThumb + ']').addClass('active');
     $('.cari[index=' + nextThumb + ']').addClass('active');
-    
+
   } else if (currentThumb == totalThumbs) {
     var nextThumb = 1;
     var nextClass = 'position-1';
@@ -45,3 +45,12 @@ setInterval(() => {
   nextVideoThumb()
 }, 2500);
 //
+
+document.getElementById('clBtn').addEventListener('click', () => { 
+  document.getElementById('subs').classList.remove('block')
+  document.getElementById('subs').classList.add('hidden')
+})
+document.getElementById('sub').addEventListener('click', () => { 
+  document.getElementById('subs').classList.add('block')
+  document.getElementById('subs').classList.remove('hidden')
+})
