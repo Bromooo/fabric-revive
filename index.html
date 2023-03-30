@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="./assets/images/icn.png" type="image/x-icon">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@300;400;500;600;700;800&family=Nunito:wght@200;300;400;500;600;700;800;900;1000&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"
+    integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="./tailwind.js"></script>
+  <title>Fabric Revive</title>
+</head>
+
+<body>
+  <header class="max-w-screen-xl w-[90%] m-auto py-8">
+    <nav class="flex items-center justify-between">
+      <div>
+        <img src="./assets/images/logo.png" alt="Logo">
+      </div>
+      <div>
+        <a class="text-lg" href="">Subscribe</a>
+        <a class="text-lg ml-4" href="">Contact Us</a>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <section class="max-w-screen-xl w-[90%] m-auto pt-16 pb-[20vh] overflow-hidden">
+      <div class="w-full flex items-center justify-between flex-col md:flex-row ">
+        <div class="md:w-1/2 w-full">
+          <h1 class="text-6xl font-bold leading-snug mb-4 lg:w-3/4 md:w-4/5 w-[90%]">Clean clothes are meant to get
+            dirty</h1>
+          <p class="text-xl md:w-1/2 w-full">We offer exquisite and crispy drycleaning for you and everyone else. </p>
+          <button class="bg-primary mt-8 py-2 px-6 text-white rounded-[4px]">Get Started</button>
+        </div>
+
+        <div class="md:w-1/2 w-full">
+          <div class="cars-frame">
+            <ul class="cars position-1" current-thumb="1" start-x="" dragging="false">
+              <li class="car thumb-1 active" index="1">
+                <img src="./assets/images/slide1.png" alt="">
+              </li>
+              <li class="car" index="2">
+                <img src="./assets/images/slide2.png" alt="">
+              </li>
+              <li class="car" index="3">
+                <img src="./assets/images/slide3.png" alt="">
+              </li>
+            </ul>
+          </div>
+          <div class="w-full items-center flex justify-center mt-4">
+            <div class="indicators">
+              <span class="cari inline-block w-4 h-4 rounded-full bg-light active" index="1"></span>
+              <span class="cari inline-block w-4 h-4 rounded-full bg-light" index="2"></span>
+              <span class="cari inline-block w-4 h-4 rounded-full bg-light" index="3"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="w-full bg-light ">
+      <div class="max-w-screen-xl w-[90%] m-auto py-8 relative pt-[55vh] md:pt-[40vh] pb-[20vh]">
+        <div class="w-full bg-white absolute top-0 left-0 mt-[-15vh] md:py-10 md:px-14 p-6 shad">
+          <div class="w-full">
+            <h2 class="text-5xl font-bold leading-snug mb-4">We can help you with</h2>
+            <div class="w-full flex md:items-center justify-between flex-wrap items-stretch mt-16 gap-y-8">
+              <div class="w-1/2 flex flex-col items-center md:w-auto">
+                <span class="inline-flex items-center justify-center h-28 w-28 bg-light rounded-full">
+                  <img src="./assets/icons/laundry.svg" alt="">
+                </span>
+                <p class="text-xl w-auto text-center mt-4">
+                  Laundry
+                </p>
+              </div>
+              <div class="w-1/2 flex flex-col items-center md:w-auto">
+                <span class="inline-flex items-center justify-center h-28 w-28 bg-light rounded-full">
+                  <img src="./assets/icons/" alt="">
+                </span>
+                <p class="text-xl w-auto text-center mt-4">
+                  Stain Removal
+                </p>
+              </div>
+              <div class="w-1/2 flex flex-col items-center md:w-auto">
+                <span class="inline-flex items-center justify-center h-28 w-28 bg-light rounded-full">
+                  <img src="./assets/icons/iron.svg" alt="">
+                </span>
+                <p class="text-xl w-auto text-center mt-4">
+                  Ironing & Folding
+                </p>
+              </div>
+              <div class="w-1/2 flex flex-col items-center md:w-auto">
+                <span class="inline-flex items-center justify-center h-28 w-28 bg-light rounded-full">
+                  <img src="./assets/icons/delivery.svg" alt="">
+                </span>
+                <p class="text-xl w-auto text-center mt-4">
+                  Pick up & Delivery
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="flex align-center justify-between md:flex-row flex-col-reverse">
+          <div class="md:w-1/2 w-full">
+            <img src="./assets/images/bigImg.png" alt="">
+          </div>
+          <div class="md:w-1/2 w-full">
+            <h1 class="text-6xl font-bold leading-snug mb-8 md:w-4/5 w-[90%]">We pickup, wash and deliver in
+              <br> <span class="text-primary">4
+                simple steps</span></h1>
+            <div class="lists">
+              <div
+                class="w-full before:content-[''] before:w-4 before:h-4 before:inline-block before:absolute before:top-0 before:left-0 before:bg-primary before:rounded-full relative mt-2 pl-8 pb-3  after:content-[''] after:absolute after:left-2 after:top-7 after:h-2/3 after:border-l after:border-solid after:border-l-primary ">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos ex nostrum aliquid, eligendi ad,
+                necessitatibus voluptatibus est facilis similique debitis accusamus, aut autem? Ex repellat quo pariatur
+                culpa necessitatibus excepturi!
+              </div>
+              <div
+                class="w-full before:content-[''] before:w-4 before:h-4 before:inline-block before:absolute before:top-0 before:left-0 before:bg-primary before:rounded-full relative mt-2 pl-8 pb-3 opacity-40 after:content-[''] after:absolute after:left-2 after:top-7 after:h-2/3 after:border-l after:border-solid after:border-l-primary ">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos ex nostrum aliquid, eligendi ad,
+                necessitatibus voluptatibus est facilis similique debitis accusamus, aut autem? Ex repellat quo pariatur
+                culpa necessitatibus excepturi!
+              </div>
+              <div
+                class="w-full before:content-[''] before:w-4 before:h-4 before:inline-block before:absolute before:top-0 before:left-0 before:bg-primary before:rounded-full relative mt-2 pl-8 pb-3 opacity-40 after:content-[''] after:absolute after:left-2 after:top-7 after:h-2/3 after:border-l after:border-solid after:border-l-primary ">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos ex nostrum aliquid, eligendi ad,
+                necessitatibus voluptatibus est facilis similique debitis accusamus, aut autem? Ex repellat quo pariatur
+                culpa necessitatibus excepturi!
+              </div>
+              <div
+                class="w-full before:content-[''] before:w-4 before:h-4 before:inline-block before:absolute before:top-0 before:left-0 before:bg-primary before:rounded-full relative mt-2 pl-8 pb-3 opacity-40 after:content-[''] after:absolute after:left-2 after:top-7 after:h-2/3 after:border-l after:border-solid after:border-l-primary ">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos ex nostrum aliquid, eligendi ad,
+                necessitatibus voluptatibus est facilis similique debitis accusamus, aut autem? Ex repellat quo pariatur
+                culpa necessitatibus excepturi!
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="max-w-screen-xl w-[90%] m-auto py-[20vh] ">
+      <div class="w-full flex items-start justify-between flex-col md:flex-row gap-12">
+        <div class="w-full md:w-1/2">
+          <h1 class="text-6xl font-bold leading-snug mb-4 md:w-4/5 lg:w-3/4 w-[90%]">More value for
+            every single wash</h1>
+          <p class="my-8 text-xl md:w-1/2 w-full">Get more value when you hop on our
+            subscription plans</p>
+          <form class="flex items-center justify-between bg-light p-2 pl-6 w-full rounded-[8px]">
+            <input placeholder="Enter your mail" type="text"
+              class="border-none w-4/6 bg-[transparent] placeholder:text-[#031D2A] outline-none">
+            <input type="submit" value="Get quote"
+              class="w-2/6 cursor-pointer text-white bg-primary py-2 rounded-[4px]">
+          </form>
+        </div>
+        <div class="w-full md:w-1/2 flex justify-end"><img src="./assets/images/slide3.png" alt=""></div>
+      </div>
+    </section>
+    <section class="grr">
+      <div class="max-w-screen-xl w-[90%] m-auto py-[5vh] pb-[12vh]">
+        <h1 class="w-full text-center text-white text-6xl font-bold leading-snug mb-8">
+          Words on the street
+        </h1>
+        <div class="flex flex-col md:flex-row items-stretch justify-between w-full gap-8">
+          <div class="md:w-1/3 w-full">
+            <div
+              class="w-full h-full bg-white px-6 py-12 before:content-[''] before:absolute before:w-8 before:h-8 before:-bottom-3 before:rounded-[8px] before:left-8 relative before:bg-white before:rotate-45 rounded-[8px] mb-6">
+              <p>I tried Fabric Revive some
+                time last month and they
+                really out did theirselves.
+                <br> <br>
+                It was really amazing, the packaging too was lit</p>
+            </div>
+            <p>Jeremy, Lekki</p>
+          </div>
+          <div class="md:w-1/3 w-full">
+            <div
+              class="w-full h-full bg-white px-6 py-12 before:content-[''] before:absolute before:w-8 before:h-8 before:-bottom-3 before:rounded-[8px] before:left-8 relative before:bg-white before:rotate-45 rounded-[8px] mb-6">
+              <p>I don’t even worry about
+                laundry any more. FR does the magic of pickup
+                and delivery, and that is
+                a huge relief for my busy
+                schedule</p>
+            </div>
+            <p>Mary, Gbagada</p>
+          </div>
+          <div class="md:w-1/3 w-full">
+            <div
+              class="w-full h-full bg-white px-6 py-12 before:content-[''] before:absolute before:w-8 before:h-8 before:-bottom-3 before:rounded-[8px] before:left-8 relative before:bg-white before:rotate-45 rounded-[8px] mb-6">
+              <p>Excellent customer service
+                They helped out with a stain that has been on my favourite shirt for months.
+                <br><br>
+                Good stuff FR is doing...</p>
+            </div>
+            <p>Yolanda, Isolo</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="max-w-screen-xl w-[90%] m-auto pt-[10vh] pb-[5vh]">
+    <div class="w-full">
+      <div class="flex items-center justify-between gap-8 flex-col md:flex-row mb-12">
+        <div class="w-full md:w-1/6">
+          <img src="./assets/images/logo.png" alt="" class="md:w-full">
+        </div>
+        <div class="w-full md:w-5/6">
+          <p class="text-base">Fabric Revive is an indigeneous laundry outfit positioned to cater for your everyday
+            cleaning and laundry
+            needs. We deliver top quality cleaning services to anyone and everyone. It’s either exquisite cleaning or
+            nothing.</p>
+        </div>
+      </div>
+      <div class="flex flex-col md:flex-row items-start justify-center gap-8 w-full">
+        <div class="md:w-1/3 w-full">
+          <div class="flex items-start justify-start gap-4 w-full">
+            <div>
+              <img src="./assets/icons/location.svg" alt="Icon">
+            </div>
+            <div class="w-5/6">
+              <p>14 Roose Alabi, Magodo, Lagos <br>
+                33b, Eric Moore, Surulere, Lagos</p>
+            </div>
+          </div>
+        </div>
+        <div class="md:w-1/3 w-full">
+          <div class="flex items-start justify-start gap-4 w-full">
+            <div>
+              <img src="./assets/icons/phone.svg" alt="Icon">
+            </div>
+            <div class="w-5/6">
+              <p>
+                <a href="tel:+2348066404404">+234 8066 404 404</a> <br>
+                <a href="tel:+2348066404404">+234 8066 404 404</a>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="md:w-1/3 w-full">
+          <div class="flex gap-4 items-start justify-start w-full">
+            <div>
+              <img src="./assets/icons/twitter.svg" alt="Icon">
+            </div>
+            <div>
+              <img src="./assets/icons/instagram.svg" alt="Icon">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="./index.js"></script>
+</body>
+
+</html>
